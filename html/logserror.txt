@@ -1,0 +1,6 @@
+2009-08-16T01:24:59+10:00 WARN (4): (filelogs.php)line47 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2009-08-16T01:26:13+10:00 WARN (4): (filelogs.php)line47 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2009-08-17T11:57:39+10:00 WARN (4): (filelogs.php)line70 - construct line10 the userid is not in a validable format.
+2009-08-17T13:56:31+10:00 WARN (4): (filelogs.php)line70 - construct line10 the userid is not in a validable format.
+2009-08-17T22:31:28+10:00 WARN (4): (filelogs.php)line70 - construct line10 the userid is not in a validable format.
+2009-08-17T22:35:21+10:00 WARN (4): (filelogs.php)line70 - construct line10 the userid is not in a validable format.

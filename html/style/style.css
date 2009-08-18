@@ -1,0 +1,110 @@
+@CHARSET "ISO-8859-1";
+#main{
+	width:300px;
+	background-color:#eee;
+	margin:30px auto;
+	padding:5px;
+}
+table tr:nth-child(odd){
+	background-color:#eee;	
+}
+a, a:hover{
+	color:#897048;	
+}
+.clear{
+	clear:both;
+	}
+.border_rounded 
+{
+   
+}
+.border_shadow 
+{
+    -webkit-box-shadow: 10px 10px 5px #888;
+    padding: 5px 5px 5px 15px;
+    width: 300px;
+}
+
+.text_shadow
+{
+    color: #897048;
+    background-color: #fff;
+    text-shadow: 2px 2px 2px #ddccb5;
+    font-size: 15px;
+}
+  
+ul{
+	list-style-type:none;
+}
+li{
+	display:block;	
+}
+#addnewfilediv{
+	float:right;
+}
+#menu{
+	float:left;	
+}
+#headdiv {
+	color:#897048;
+	font-size:15px;
+	margin:auto;
+	text-align:center;
+	width:300px;
+}
+#resultarray{
+	width:600px;
+	margin:auto;	
+}
+input[type="submit"]#button{
+	width:200px;
+	color:brown;
+	background-color:white;
+	margin-top:10px;	
+	font-weight:bold;
+}
+input[type="submit"]#add{
+	width:50px;
+	color:brown;
+	background-color:white;
+	margin-top:10px;	
+	font-weight:bold;
+}
+input[type="submit"]#delete{
+	width:100%;
+	color:brown;
+	background-color:white;
+	margin:10px auto 0;	
+	font-weight:bold;
+	
+}
+input[type="text"]{
+	width:200px;
+	background-color:#ffffbb;
+}
+input[type="text"]#delimiter {
+	background-color:#FFFFBB;
+	width:80px;
+	color:#666;
+	font-style:italic;
+}
+input[type="text"]#filename {
+	background-color:#FFFFBB;
+	width:200px;
+	color:#666;
+	font-style:italic;
+}
+#menu ul{
+	list-style-type:none;
+}
+
+#menu ul li {
+	list-style-type:none;
+	display:inline;
+	margin:0 5px;
+}
+
+table{
+	text-align:center;
+	margin:Auto;
+}
