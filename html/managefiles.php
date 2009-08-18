@@ -45,6 +45,11 @@ try{
 <head><title><?php echo $titleSite;?></title>
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <link href="style/style.css"       rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+	function empty(field){
+		document.getElementById(field).value = '';
+	}
+</script>
 </head>
 <body>
 <div id="menu">
@@ -56,8 +61,8 @@ try{
 	<form name='addnewfile' id='addnewfile' action='managefiles.php' method='POST' >
 	<label for="filename">Add new file</label>
 	
-	<input type='text' id='delimiter' name='delimiter' value='delimiter' />
-	<input type='text' id='filename' name='filename' value='filename' />
+	<input type='text' id='delimiter' name='delimiter' value='delimiter' onclick="javascript:empty('delimiter');" />
+	<input type='text' id='filename' name='filename' value='filename'  onclick="javascript:empty('filename');"  />
 	<input type='submit' id='add' name='add' value='Add' />
 	</form>
 </div>
@@ -70,7 +75,7 @@ try{
 			<td>Id</td>
 			<td>FileName</td>
 			<td>Delimiter</td>
-			<td>Path</td>
+			<td>Usid</td>
 		</tr>
 		
 		<?php 

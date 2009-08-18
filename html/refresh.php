@@ -29,21 +29,40 @@ $resultarray = $fileLogs->arrayFile;
 <div id="menu">
 <?php include('includes/menutop.php');?>
 </div>
-<div id="headdiv"><h1><?php echo $titleSite;?></h1></div>
+<div id="headdiv"><h1>Refresh</h1></div>
 
 <div id='resultarray'>
-<?php 
-if (count($resultarray) >0){
-	foreach($resultarray as $key => $values){
-		//echo $values->id;
-		$fileLogs->getLogs($values->id);
-	}
-}
-?>
+<table width="100%">
+		<tr>
+			<td>Id</td>
+			<td>FileName</td>
+			<td>Delimiter</td>
+			<td>usid</td>
+		</tr>
+		
+	<?php 
+		
+		if (count($resultarray) >0){
+			foreach($resultarray as $key => $values){
+				//do the sql load ...
+				//$values->file_name
+				
+				echo "<tr>";
+					echo "<td>$values->id</td>";
+					echo "<td>$values->file_name</td>";
+					echo "<td>$values->delimiter</td>";
+					echo "<td>$values->us_id</td>";
+			
+				echo "</tr>";
+			}
+		}
+		?>
+		
+	</table>
 </div>
 <div id="message"> <?php echo $message;?></div>
 <div id="main">
-Your array
+
 </div>
 </body>
 </html>

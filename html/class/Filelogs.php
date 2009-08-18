@@ -94,5 +94,30 @@ class Filelogs{
 		}
 	}
 	
-	
+//return nothing, just call $nameclass->arrayFile
+	public function getLogs($fiId){
+		
+		Try{
+			$result = array();
+			$select = "SELECT id, line, fi_id " .
+				  " FROM resultimport" .
+				  " WHERE us_id=" . $fiId;
+			$this->connection->query($select);
+			
+			//check sql 
+		    $this->connection->checkSQL();
+		    	$i=0;
+			while($result = $this->connection->fetchNextObject()){
+				
+				$result[$i]['id']   = $result->id;
+				$result[$i]['line'] = $result->line;
+				$result[$i]['fi_id']= $result->fi_id;
+				$i++;
+			}
+			return $result;
+		}catch (Exception $e) {
+		   $this->log->setWarning($e->getMessage());
+		}
+		
+	}
 }
